@@ -1,0 +1,173 @@
+#page {
+    width: 1000px;
+    height: 950px;
+    background-color: rgb(220, 220, 220);
+    }
+       
+       
+    #header {
+    background-color: rgb(37, 32, 75);
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-content:center;
+    }
+       
+       
+    #header1 {
+    background-color: rgb(220, 220, 220);
+    width: 200px;
+    height: 30px;
+    margin: auto;
+    }
+       
+       
+    #header2 {
+    background-color: rgb(220, 220, 220);
+    width: 425px;
+    height: 30px;
+    margin: auto;
+    }
+    
+    
+    #main {
+    background-color: rgb(122, 122, 122);
+    width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+
+    }
+    
+    
+    #container {
+    display: flexbox;
+    align-content: space-around;
+    margin: 30px 100px;
+    }
+    
+    #container2 {
+    display: flex;
+    }
+       
+    #box1 {
+    background-color: rgb(204, 204, 204);
+    width: 250px;
+    height: 75px;
+    }
+       
+       
+    #box2 {
+    background-color: rgb(204, 204, 204);
+    width: 100px;
+    height: 30px;
+    margin: 10px 13px;
+    }
+    
+    
+    #box3 {
+    background-color: rgb(204, 204, 204);
+    width: 100px;
+    height: 30px;
+    margin: 10px 13px;
+    }
+    
+    
+    #box4 {
+    background-color: rgb(204, 204, 204);
+    width: 400px;
+    height: 150px;
+    margin: 30px 50px;
+    }
+
+
+    
+#bloco2 {
+background-color: rgb(201, 201, 201);
+width: 100%;
+height: 250px;
+}
+
+#caixao {
+display: flex;
+align-items: center;
+}
+
+#caixa1 {
+background-color: rgb(146, 146, 146);
+width: 400px;
+height: 150px;
+margin: 50px
+} 
+
+#caixa2 {
+background-color: rgb(146, 146, 146);
+width: 400px;
+height: 150px;
+margin: 30px;
+}
+        
+#caixa3 {
+background-color: rgb(146, 146, 146);
+width: 400px;
+height: 150px;
+margin: 30px;
+}
+
+
+
+
+#bloco3 {
+background-color: rgb(147, 147, 147);
+width: 100%;
+height: 250px;
+}
+
+#main2 {
+display: flex;
+align-items: center;
+} 
+
+#caixao2 {
+margin: 30px 70px;
+}
+    
+#cai1 {
+background-color: rgb(209, 209, 209);
+width: 200px;
+height: 70px;
+margin: 15px 0 15px 35px;
+} 
+    
+#cai2 {
+background-color: rgb(210, 210, 210);
+width: 200px;
+height: 70px;  
+margin: 15px 0 15px 35px;
+}
+            
+#caixao3 {
+margin:0 90px;
+}
+
+#cai3 {
+background-color: rgb(209, 209, 209);
+width: 450px;
+height: 70px;
+margin: 15px 15px 15px 0;
+} 
+        
+#cai4 {
+background-color: rgb(211, 211, 211);
+width: 450px;
+height: 70px;
+margin: 15px 15px 15px 0;
+}
+    
+
+
+#bloco4 {
+background-color: rgb(201, 201, 201);
+width: 100%;
+height: 250px;
+}
