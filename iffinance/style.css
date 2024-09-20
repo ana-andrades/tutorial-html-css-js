@@ -74,3 +74,73 @@ header nav ul li a:hover{
 main {
     color: #FFF;
 }
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+background-color: #504f4f
+}
+
+tr:nth-child(odd) {
+background-color: #303030
+}
+
+tr:nth-child(1) {
+    background-color: #4d4d4d 
+    }
+    
+    tr:nth-child(2) {
+    background-color: #979797
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 10;
+        width: 50%;
+    }
+
+    fieldset{
+        border: 1px solid #2c2c2c;
+        border-radius: 20px;
+    }
+
+    fieldset:first-child{
+    display: flex;
+    flex-direction: column;
+    }
+
+    input[type=text], input[type=password], select, textarea {
+        padding: 3px 8px;
+        border-radius: 10px;
+        background-color: #575757;
+        border: none;
+        margin: 5px;
+        color: #FFF;
+        font-size: 16px;
+    }
+
+    select {
+       width: fit-content; 
+    }
+
+    input[type=submit] {
+        width: 50%;
+        background-color: #78A75A;
+        border-radius: 20px;
+        padding: 10px 20px;
+        border: none;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    input[type=submit]:hover{
+        background-color: #47a510;
+    }
+    
