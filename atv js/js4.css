@@ -1,0 +1,76 @@
+html {
+    background: #b9b9b9;
+}
+
+main {
+    display: flex;
+}
+
+#infos {
+    display: flex;
+}
+
+#img , #corpo {
+    height: 30px;
+    margin: 10px;
+    border: 2px solid;
+}
+
+button {
+    background-color: red;
+    color: white;
+    margin: 10px;
+    border-radius: 5px;
+    width: 70px;
+}
+
+#caixa {
+    display: flex;
+    margin: 50px;
+}
+
+main {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+
+#sidebar1 {
+margin-top: 75px;
+}
+
+.blocos1 {
+    height: 150px;
+    width: 275px;
+    margin: 0px 200px 30px 30px;
+    background-color: white;
+    border: 2px solid;
+}
+
+.box1 {
+    height: 250px;
+    width: 275px;
+    background-color: white;
+    border: 2px solid;
+    border-bottom: none;
+    }
+
+.box2 {
+    height: 250px;
+    width: 275px;
+    background-color: white;
+    border: 2px solid;
+    border-bottom: none;
+    }
+
+.box3 {
+    height: 250px;
+    width: 275px;
+    background-color: white;
+    border: 2px solid;
+    border-bottom: none;
+    }
+
+

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Atividade 3</title>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <main>
+            <div class="wrapper">
+                <h1>Home</h1>
+
+                <p>Cor:</p>
+                <input type="text" id="txtCor">
+                <button onclick="adicionarCor()">Adicionar Cor</button>
+
+                <p>Galeria:</p>
+                <div id="galeria" style="width: 200px; height: 200px; background: #d0d0d0;">
+                </div>
+
+                <p>Resultado:</p>
+                <div id="resultado" style="width: 200px; height: 200px; background: #6cb7f0; display: flex; justify-content: center; align-items: center;"></div>
+            </div>
+        </main>
+    </body>
+    <script>
+     
+    const adicionarCor = () => { // operador é igual '+' ou '-'
+        const txtCor = document.getElementById('txtCor')
+        const galeria = document.getElementById('galeria')
+
+        const cor = txtCor.value
+
+        galeria.innerHTML += `<button onclick="aplicarCor('${cor}')" style="width: 50px; height: 50px; background: ${cor}; margin: 10px;"></button>`
+    }
+
+    const aplicarCor = (cor) => { // operador é igual '+' ou '-'
+        const result = document.getElementById('resultado')
+
+        result.style.background = cor
+        result.innerHTML = `<p>${cor}</p>`
+
+    }
+    </script>
+</html>

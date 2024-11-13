@@ -1,0 +1,39 @@
+#container {
+    width: 1000px;
+    height: 950px;
+    background-color: rgb(255, 247, 16);
+    margin: 0 auto;
+    }
+
+    #caixa {
+        display: flex;
+    }
+
+    #lado {
+        width: 150px;
+        height: 950px;
+        background-color: rgb(255, 138, 4);
+    }
+    
+    
+    #main{
+        display:block;
+}
+      
+    #cima {
+        width: 850px;
+        height: 120px;
+        background-color: rgb(20, 20, 174);
+    }
+    
+    #meio {
+        width: 850px;
+        height: 710px;
+        background-color: rgb(174, 160, 207);
+    }
+
+    #baixo {
+        width: 850PX;
+        height: 120px;
+        background-color: rgb(20, 20, 174);
+    }
