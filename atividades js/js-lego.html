@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Atividade 2</title>
+        <link rel="stylesheet" href="lego.css">
+    </head>
+    <body>
+        <main>
+                 
+        <div id="infos">   
+            <p>IMAGEM:</p> 
+            <input type="text" id="img">
+
+            <select id="corpo" name="corpo">
+                <option>Cabeça</option>
+                <option>Corpo</option>
+                <option>Perna</option>
+            </select>
+
+            <button onclick="escolher()">add</button>
+        </div>
+    
+        <div id="caixa"> 
+
+            <div id="sidebar1">
+            
+            <p style="margin: 0px 0px 0px 30px;">Cabeças</p>
+            <div class="bloco1">
+                <img onclick="mudar('/imgs/cabeça_default.webp', 'cab')" src="/imgs/cabeça_default.webp">
+            </div>
+            <p style="margin: 0px 0px 0px 30px;">Corpos</p>
+            <div class="bloco2">
+                <img onclick="mudar('/imgs/cabeça_default.webp', 'cab')" src="/imgs/cabeça_default.webp">
+            </div>
+            <p style="margin: 0px 0px 0px 30px;">Pernas</p>
+            <div class="bloco3">
+                <img onclick="mudar('/imgs/cabeça_default.webp', 'cab')" src="/imgs/cabeça_default.webp">
+            </div>
+
+        </div>
+
+        <div id="sidebar2">
+
+         <div class="box1">
+
+         </div>
+         <div class="box2">
+
+         </div>
+         <div class="box3">
+            
+         </div>
+
+        </div> 
+
+    </div>
+
+        </main>
+    </body>
+   <script>
+    
+    const escolher = () => {
+        const url = document.querySelector('#url')
+        const parte= document.querySelector('#corpo')
+
+        if (parte.value === 'Cabeca') {
+            const parteCab = document.querySelector('#bloco1')
+            parteCab.innerHTML += `<img onclick="mover('${url.value}', 'cabe')" src="${url.value}" style="height: 50px; width: 50px;">`
+        }
+        else if (parte.value === 'Corpo') {
+            const parteCor = document.querySelector('#bloco2')
+            parteCor.innerHTML += `<img onclick="mover('${url.value}', 'cor')" src="${url.value}" style="height: 50px; width: 50px;">`
+        }
+        else if (parte.value === 'Perna') {
+            const partePer = document.querySelector('#bloco3')
+            parteCor.innerHTML += `<img onclick="mover('${url.value}', 'per')" src="${url.value}" style="height: 50px; width: 50px;">` 
+        }
+
+    }
+   </script>
+</html>

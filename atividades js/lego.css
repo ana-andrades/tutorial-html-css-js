@@ -41,7 +41,7 @@ main {
 margin-top: 75px;
 }
 
-.blocos1 {
+.bloco1, .bloco2, .bloco3{
     height: 150px;
     width: 275px;
     margin: 0px 200px 30px 30px;
@@ -49,28 +49,10 @@ margin-top: 75px;
     border: 2px solid;
 }
 
-.box1 {
+.box1, .box2, .box3 {
     height: 250px;
     width: 275px;
     background-color: white;
     border: 2px solid;
     border-bottom: none;
     }
-
-.box2 {
-    height: 250px;
-    width: 275px;
-    background-color: white;
-    border: 2px solid;
-    border-bottom: none;
-    }
-
-.box3 {
-    height: 250px;
-    width: 275px;
-    background-color: white;
-    border: 2px solid;
-    border-bottom: none;
-    }
-
-
