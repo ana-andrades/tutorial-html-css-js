@@ -1,5 +1,5 @@
-function openModal(){
-    const modal = document.querySelector('.modal')
+function openModal(id){
+    const modal = document.querySelector(id)
     modal.style.display = 'flex'
 }
 
@@ -26,7 +26,7 @@ const cardList = document.querySelector('#card-list')
     const closedValue = event.target.closedValue.value
 
     cardList.innerHTML += `
-    <div class="card-ticker">
+    <div class="card-ticker" onmouseenter="showCardOptions(event)" onmouseleave="hideCardOptions(event)">
        <header>
         <img src="${urlLogo}">
         <h4>${nameCompany}</h4>
@@ -39,7 +39,50 @@ const cardList = document.querySelector('#card-list')
         <p>Quantidade: <span>${quantity}</span></p>
         <p>Posição: <span>${closedValue}</span></p>
       </footer>
+      <div class="card-options">
+          <button onclick="editTicker(event)">Editar</button>
+          <button onclick="removeCard(event)">Excluir</button>
+       </div>
     </div>`
+
     closeModal()
     event.target.reset()
+}
+
+function showCardOptions(event){
+    const cardOptions = event.target.querySelector('.card-options')
+    cardOptions.style.display = 'flex'
+}
+
+function hideCardOptions(event){
+    const cardOptions = event.target.querySelector('.card-options')
+    cardOptions.style.display = 'none'
+}
+
+function removeCard(event) {
+    //closest busca os ancestrais do elemento
+    const cardTicker = event.target.closest('.card-ticker')
+
+    cardTicker.remove()
+}
+
+function removeCard(event){
+    // closest(...) busca nos acendentes um elemento
+    const cardTicker = event.target.closest('.card-ticker')
+    // .remove() deleta o elemento do html
+    cardTicker.remove()
+}
+
+function editTicker(event){
+    const cardTicker = event.target.closest('.card-ticker')
+    
+    const imgLogo = cardTicker.querySelector('header img')
+    const urlLogo = imgLogo.getAttribute('src')
+    document.querySelector('#eUrlLogo').value
+
+    const nomeCompany = cardTicker.querySelector('header img')
+    const  = .getAttribute('src')
+    document.querySelector('#eUrlLogo').value
+
+    openModal('#modal-edit-ticker')
 }
