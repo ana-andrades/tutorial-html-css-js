@@ -269,9 +269,15 @@ width: 100%;
     left: 0;
     bottom: 0;
     right: 0;
+<<<<<<< HEAD
     background: #2d2d2d;
     border-radius: 16px;
     display: flex;
+=======
+    background: #000000be;
+    border-radius: 16px;
+    display: none;
+>>>>>>> dcd4b188ce294791b73d43b9a0e5ad9885bdc544
     justify-content: center;
     align-items: center;
     gap: 20px;

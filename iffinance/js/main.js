@@ -3,10 +3,10 @@ function openModal(id){
     modal.style.display = 'flex'
 }
 
-function closeModal(event){
-    const modal = document.querySelector('.modal')
+function closeModal(event, id){
+    const modal = document.querySelector(id)
 
-    if(event === undefined)
+    if(event === null)
         return modal.style.display = 'none'
 
     if(event.target.className === 'modal')
@@ -14,11 +14,11 @@ function closeModal(event){
 }
 
 function addTicker (event) {
-    //previne comportamento padrão da pag
+    //previne o comportamento padrão de recarregar a página ou enviar para algum endereço (action)
+
     event.preventDefault()
-
-const cardList = document.querySelector('#card-list')
-
+    // event.target (form)
+    
     const urlLogo = event.target.urlLogo.value
     const nameCompany = event.target.nameCompany.value
     const ticker = event.target.ticker.value
@@ -26,7 +26,7 @@ const cardList = document.querySelector('#card-list')
     const closedValue = event.target.closedValue.value
 
     cardList.innerHTML += `
-    <div class="card-ticker" onmouseenter="showCardOptions(event)" onmouseleave="hideCardOptions(event)">
+    <div class="card-ticker">
        <header>
         <img src="${urlLogo}">
         <h4>${nameCompany}</h4>
@@ -39,12 +39,7 @@ const cardList = document.querySelector('#card-list')
         <p>Quantidade: <span>${quantity}</span></p>
         <p>Posição: <span>${closedValue}</span></p>
       </footer>
-      <div class="card-options">
-          <button onclick="editTicker(event)">Editar</button>
-          <button onclick="removeCard(event)">Excluir</button>
-       </div>
     </div>`
-
     closeModal()
     event.target.reset()
 }
