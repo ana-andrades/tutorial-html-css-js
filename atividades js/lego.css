@@ -38,7 +38,12 @@ main {
 }
 
 #sidebar1 {
-margin-top: 75px;
+margin-top: 60px;
+}
+
+#sidebar2 {
+margin-top: 70px;
+border: 2px solid black;
 }
 
 .bloco1, .bloco2, .bloco3{
@@ -50,9 +55,7 @@ margin-top: 75px;
 }
 
 .box1, .box2, .box3 {
-    height: 250px;
-    width: 275px;
+    height: 205px;
+    width: 250px;
     background-color: white;
-    border: 2px solid;
-    border-bottom: none;
     }

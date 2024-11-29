@@ -50,24 +50,21 @@
    <script>
     
     const escolher = () => {
-        const url = document.querySelector('#url')
-        const parte= document.querySelector('#corpo')
+        const url = document.querySelector('#img')
+        const parte = document.querySelector('#corpo').value
 
-        if (parte.value === 'Cabeca') {
-            const parteCab = document.querySelector('#bloco1')
-            parteCab.innerHTML += `<img onclick="mover('${url.value}', 'cabe')" src="${url.value}" style="height: 50px; width: 50px;">`
+        if (parte === "Cabeça") {
+            const parteCab = document.querySelector('.bloco1')
+            parteCab.innerHTML += `<button onclick="moverCab('${url.value}')" style="background-color:white; border: none;"><img src="${url.value}" style="height: 50px; width: 50px;"></button>`
         }
-        else if (parte.value === 'Corpo') {
-            const parteCor = document.querySelector('#bloco2')
-            parteCor.innerHTML += `<img onclick="mover('${url.value}', 'cor')" src="${url.value}" style="height: 50px; width: 50px;">`
+        else if (parte === 'Corpo') {
+            const parteCor = document.querySelector('.bloco2')
+            parteCor.innerHTML += `<button onclick="moverCor('${url.value}')" style="background-color:white; border: none;"><img src="${url.value}" style="height: 50px; width: 50px;"></button>`
         }
-        else if (parte.value === 'Perna') {
-            const partePer = document.querySelector('#bloco3')
-            partePer.innerHTML += `<img onclick="mover('${url.value}', 'per')" src="${url.value}" style="height: 50px; width: 50px;">` 
+        else if (parte === 'Perna') {
+            const partePer = document.querySelector('.bloco3')
+            partePer.innerHTML += `<button onclick="moverPer('${url.value}')" style="background-color:white; border: none;"><img src="${url.value}" style="height: 50px; width: 50px;"></button>` 
         }
-    }
-    const mover = () => {
-        
     }
 
     const moverCab = (url) => {
